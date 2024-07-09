@@ -1,6 +1,0 @@
-version: '3'
-services:
-  app:
-    image: sha256:7eb85f44c22962f72d3e4188f22f41b8fbec732d3e1b3b85ddc55225bb8e5dee
-    ports:
-      - "5000:5000"
