@@ -1,24 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
-
+import handlePrint from "./Buttons/handlePrint";
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <main>
+        {/*header*/}
+        <header>
+          <div>
+            <h2>InvoEase</h2>
+          </div>
+        </header>
+        
+        <div>
+          <ul>
+            <li><button onClick={handlePrint}>Print</button></li>
+            <li>Download</li>
+            <li>Send</li>
+          </ul>
+        </div>
+        {/*end of header*/}
+
+      {/* Your Details*/}
+      <section>
+        <h2>Siyabulela Mncube</h2>
+        <p>Your address: </p>
+      </section>
+      {/* End of Your Details*/}
+
+      {/* Clients Details*/}
+      <section>
+        <h2>Client's Name: </h2>
+        <p> Client's address: </p>
+      </section>
+      {/* End of clients Details*/}
+
+      {/* Date */}
+        <article>
+          <ul>
+            <li>Invoice Number: </li>
+            <li> Invoice Date: </li>
+            <li>Due Date: </li>
+          </ul>
+        </article>
+      {/* end of Date */}
+
+      {/* Table */}
+
+      {/* End of table  */}
+      </main>
+    </>
   );
 }
 
