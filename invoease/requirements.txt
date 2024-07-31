@@ -1,1 +1,2 @@
+npx install react-app
 react-uuid-icons
