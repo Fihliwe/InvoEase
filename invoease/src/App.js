@@ -32,7 +32,7 @@ function App() {
           <Date />
           <Table />
           <Notes />
-          <Footer />
+          <Footer name={name} bankName={bankName} accountNumber={bankAccount} contactNumber={phoneNumber} yourEmail={emails} />
 
           <button onClick={() => setShowInvoice(false)} className=" mt-5 bg-black text-white font-bold py-2 px-8 rounded shadow 
             border-2 border-black hover:bg-transparent hover:text-black 
@@ -47,7 +47,7 @@ function App() {
               name="text" 
               id="name" 
               placeholder="Enter your name" 
-              autoComplete="off" 
+              autoComplete="on" 
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
